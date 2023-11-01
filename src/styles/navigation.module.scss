@@ -1,0 +1,79 @@
+header{
+    background-color: var(--navbar-background-color);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid var(--border-color);
+    
+    .logo a{
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+  }
+  .navigation{
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+      justify-content: space-between;
+      li{
+        margin-right: 20px;
+        a{
+          color: var(--text-color);
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+      }
+      }
+    }
+  }
+  .btnDarkMode{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--navbar-background-color);
+    color: var(--icon-color);
+    span{
+      font-size: 1rem;
+    }
+  } 
+}
+
+@media (max-width: 576px) {
+  header {
+    .navigation {
+      ul {
+          flex-direction: row; // Membuat item navigasi ditumpuk secara vertikal
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  .btnDarkMode span{
+    font-size: .8rem;
+  }
+  }
+}
+
+@media (max-width:  768px) {
+  header{
+    padding: 10px 20px; 
+  }
+  header .logo a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+  header .navigation ul li a{
+    font-size: 1rem;
+  }
+  .btnDarkMode span{
+    font-size: .8rem;
+  }
+}

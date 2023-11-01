@@ -1,0 +1,40 @@
+
+
+:root {
+    --navbar-background-color: #FFFFFF;
+    --background-color: #FAFAFA;
+    --border-color: #1D2A33;
+    --text-color: #17181A;
+    --text-color-2: #6D6D6D;
+    --card-color: #FFFFFF;
+    --icon-color: #3C3C3E
+  }
+
+[data-theme='dark'] {
+    --navbar-background-color: #2B3743;
+    --background-color: #202D36;
+    --border-color: #F2F2F2;
+    --text-color: #FCFEFF;
+    --text-color-2: #CDD7E0;
+    --card-color: #2B3743;
+    --icon-color: #FFFFFF
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+    

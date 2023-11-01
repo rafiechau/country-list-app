@@ -1,0 +1,82 @@
+.content {
+    display: grid;
+    grid-template-columns: 95% 5%;
+    width: 100vw;
+    margin-top: 120px;
+    box-sizing: border-box;
+    gap: 80px;
+    padding: 0 5rem;
+}
+
+
+.cardlist{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+    background-color: var(--background-color);
+}
+
+.titlefavorite{
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--text-color);
+}
+
+.countrycard {
+  width: 300px;
+  position: relative;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  .cardinfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    font-size: 14px;
+    color: var(--text-color-2);
+    padding: 20px;
+  }
+  .favorite {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  }
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 120px;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+  .cardlist {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+} 
